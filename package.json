@@ -1,0 +1,39 @@
+{
+  "name": "next-flow-transpile-repro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "yarn run clean && yarn run update",
+    "clean": "lerna exec -- yarn run clean",
+    "flow": "flow check",
+    "update": "yarn install && lerna run --no-bail --stream prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TxHawks/next-flow-transpile-repro.git"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">= 10.8.0",
+    "yarn": ">= 1.7.0"
+  },
+  "workspaces": [
+    "packages/*/*"
+  ],
+  "devDependencies": {
+    "chalk": "^2.1.0",
+    "cross-spawn": "^5.1.0",
+    "deepmerge": "^1.5.2",
+    "flow-bin": "^0.87.0",
+    "fs-extra": "^4.0.2",
+    "globby": "^6.1.0",
+    "inquirer": "^3.3.0",
+    "jsonlint-cli": "^1.0.1",
+    "lerna": "^2.11.0",
+    "node-dir": "^0.1.17",
+    "rimraf": "^2.6.2",
+    "cross-env": "^5.2.0"
+  }
+}

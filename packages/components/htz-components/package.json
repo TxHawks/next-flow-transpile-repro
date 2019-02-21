@@ -1,0 +1,24 @@
+{
+  "name": "@haaretz/htz-components",
+  "version": "0.2.0",
+  "description": "Shared UI components",
+  "author": "",
+  "license": "UNLICENSED",
+  "repository": "Haaretz/htz-frontend",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "clean": "htz-scripts clean",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^16.8.2"
+  },
+  "devDependencies": {
+    "@haaretz/htz-react-base": "^1.1.0",
+    "react": "^16.8.2"
+  }
+}
